@@ -18,6 +18,11 @@ For more info,  check out https://elijahcaine.me/pageup/README.rst.
 if 'build' in sys.argv:
     build()
 elif 'init' in sys.argv:
-    init()
+    # `pageup init mysite` -> creates & populates a `mysite` directory
+    try:
+        init(sys.argv[sys.argv.index('init')+1])
+        print(sys.argv[sys.argv.index('init')+1])
+    except:
+        init()
 else:
     print(help_msg)

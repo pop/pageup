@@ -11,12 +11,8 @@ setup(
     packages=['pageup'],
     author='Elijah Caine',
     author_email='elijahcainemv@gmail.com',
-    url='https://elijahcaine.me/bookclub/',
-    description='A small package for throwing together single page static sites',
+    url='https://github.com/ElijahCaine/pageup',
+    description='A simple RST based static (html) page generator,',
     install_requires=requirements,
     scripts=['pageup/pageup'],
-#    data_files=[('static', ['static/style.css',
-#                            'static/content.rst',
-#                            'static/template.jinja'])]
-#    
 )
