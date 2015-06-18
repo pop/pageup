@@ -1,11 +1,18 @@
 ================================
 ``pageup init`` ``pageup build``
 ================================
-``pageup`` is a little python tool used to automate the upkeep of my book
-club and a few other single page static sites.
+
+Yes, that easy
+--------------
+
+``pageup`` is a little tool get your (web)page up asap. ``pageup init
+yoursite``, then run ``pageup build`` after you've made changes to your
+content and page styles. I use to `book club`_ website and a few other single
+page static pages.
 
 Made with `jinja2`_ and `docutils`_.
 
+.. _book club: http://elijahcaine/reading/
 .. _jinja2: http://jinja.pocoo.org/
 .. _docutils: http://docutils.sourceforge.net/
 
@@ -14,14 +21,14 @@ Usage
 -----
 ``pageup`` is pretty simple. 
 
-================  ===============================================================
-Command           Description
-================  ===============================================================
-``pageup``        Prints help menu.
-``pageup build``  Generates the page (index.html)
-``pageup init``   Populates current working directory with necessary files
+======================  ==============================================================================
+Command                 Description
+======================  ==============================================================================
+``pageup``              Prints help menu.
+``pageup build``        Generates the page in the site's base directory. Generates an index.html file.
+``pageup init``         Populates current working directory with necessary files
 ``pageup init mysite``  Creates ``mysite`` directory and populates that with necessary files.
-================  ===============================================================
+======================  ==============================================================================
 
 Necessary files are ``content.rst``, ``style.css``, and ``template.jinja``.
 These are templates for you to modify.
