@@ -1,18 +1,38 @@
-`book-club build`
-=================
-`book_club` is a little python tool used to automate the upkeep of my book
-club.
+==============
+`pageup build`
+==============
+`pageup` is a little python tool used to automate the upkeep of my book
+club and a few other single page static sites.
 
-All you need to do is update the appropriate variables in the book-club.rst
-file and run `book-club build`. It'll generate an index.html file and you're
-good to go.
+Made with `jinja2`_ and `docutils`_.
+
+.. _jinja2: http://jinja.pocoo.org/
+.. _docutils: http://docutils.sourceforge.net/
+
+
+Usage
+-----
+`pageup` is pretty simple. 
+
+==============  ===============================================================
+Command         Description
+==============  ===============================================================
+`pageup`        Prints help menu.
+`pageup build`  Generates the page (index.html)
+`pageup init`   Populates current working directory with necessary files
+=============== ===============================================================
+
+Necessary files are ``content.rst``, ``style.css``, and ``template.jinja``.
+These are templates for you to modify.
+
 
 Installation:
 -------------
 
 .. code::
 
-    $ pip install git+https://github.com/ElijahCaine/book_club.git
+    $ pip install git+https://github.com/ElijahCaine/pageup.git
+
 
 Setup
 -----
@@ -21,12 +41,18 @@ Here's what your directory structure should look like
 .. code::
 
     yourdomain.bla/
-        bookclub/
-            book-club.rst
+        somepage/
+            content.rst
             style.css
             template.jinja
+            index.html      # This file is generated with `pageup build` 
 
-`bookclub` is however you want to call `yourdomain.ext/bookclub/`.
+`somepage` depends on whatever you want `yourdomain.ext/somepage/` page url to
+look like.
 
-For an exmample of book-club.rst, template.jinja, and style.css check out the
+If you don't want to deal with manually creating these files simply run `pageup
+setup` and `pageup` will populate the current directory with a template.rst,
+content.rst and style.css.
+
+For an example of content.rst, template.jinja, and style.css check out the
 ones in this repo.

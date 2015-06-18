@@ -1,0 +1,14 @@
+/*
+    This is an example css file for pageup*, a ReStructuredText based static
+    page generator. Enjoy!
+
+    * https://github.com/elijahcaine/pageup
+*/
+#main {
+    width: 500px;
+    font-family: monospace;
+    font-size: 15px;
+    margin: 0 auto;
+    color: black;
+    background: white;
+}
