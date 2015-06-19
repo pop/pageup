@@ -3,3 +3,7 @@ build/
 index.html
 venv/
 pageup.egg-info
+MANIFEST
+dist/
+setup.cfg
+wheelhouse/

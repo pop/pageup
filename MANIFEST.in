@@ -1,0 +1,3 @@
+include pageup/data/template.jinja
+include pageup/data/style.css
+include pageup/data/content.rst
