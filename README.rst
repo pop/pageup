@@ -6,9 +6,9 @@ Yes, that easy
 --------------
 
 ``pageup`` is a little tool get your (web)page up asap. ``pageup init
-yoursite``, then run ``pageup build`` after you've made changes to your
-content and page styles. I use to `book club`_ website and a few other single
-page static pages.
+yoursite``, then run ``pageup build`` after you've made changes to your content
+and page styles. I use this to manage my `book club`_ website and a few other
+single page static pages.
 
 Made with `jinja2`_ and `docutils`_.
 
@@ -39,6 +39,8 @@ Installation:
 
 .. code::
 
+    $ pip install pageup
+    or
     $ pip install git+https://github.com/ElijahCaine/pageup.git
 
 
