@@ -81,8 +81,6 @@ def grab(filename, directory):
     directory is their custom site name dir,
     filename is the name of the example file being copied over.
     """
-    print("Copying %s from %s to %s" % (filename, path.join(_ROOT, 'data', filename), path.join(getcwd(), filename)))
-    with open(path.join(getcwd(), directory, filename), 'w') as copy:
-        with open(path.join(_ROOT, 'data', filename), 'r') as template:
-            for line in template:
-                copy.write(line)
+    r = requests.get('https://raw.githubusercontent.com/ElijahCaine/pageup/master/pageup/data/'+filename)
+    with open(path.join(directory,filename), 'wb') as f:
+        f.write(r.content)
