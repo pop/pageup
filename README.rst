@@ -1,5 +1,5 @@
 ================================
-``pageup init`` ``pageup build``
+``pageup init``, ``pageup build``
 ================================
 
 Yes, that easy
@@ -42,6 +42,9 @@ Installation:
     $ pip install pageup
     or
     $ pip install git+https://github.com/ElijahCaine/pageup.git
+
+**NOTE:** PageUp only works with Python 3.X at this point in time. It *should*
+work with Python 2.X but the installation is not complete.
 
 
 Setup
